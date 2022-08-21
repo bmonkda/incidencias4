@@ -236,7 +236,8 @@ return [
 
     'use_route_url' => false,
     // 'dashboard_url' => 'home',
-    'dashboard_url' => '/',
+    // 'dashboard_url' => '/',
+    'dashboard_url' => '/admin',
     'logout_url' => 'logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -296,7 +297,7 @@ return [
         ],
         [
             'text'  => 'Dashboard',
-            'route' => 'admin.index',
+            'route' => 'admin.home',
             'icon'  => 'fas fa-fw fa-tachometer-alt',
         ],
         [
