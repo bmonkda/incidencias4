@@ -90,4 +90,11 @@ class User extends Authenticatable
         return 'user/profile';
     }
 
+    //Relaciones uno a muchos
+
+    public function incidencias()
+    {
+        return $this->hasMany(Incidencia::class);
+    }
+
 }
