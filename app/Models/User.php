@@ -58,4 +58,36 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+
+    public function adminlte_image(){
+        return $this->profile_photo_url;
+    }
+
+    public function adminlte_desc()
+    {
+        // modificar código cuando se haga tabla de roles
+        // return 'rol del usuario';
+        return 'Administrador';
+
+
+    //     if ($this->hasRole('Admin')) {
+    //         return 'Administrador';
+    //     }
+    //     elseif ($this->hasRole('Gestor')) {
+    //         return 'Gestor';
+    //     }
+    //     else{
+    //         return 'Usuario';
+    //     }
+
+    }
+
+    public function adminlte_profile_url()
+    {
+        // modificar código para ir al perfil del usuario 
+        // return 'profile/username';
+        return 'user/profile';
+    }
+
 }
