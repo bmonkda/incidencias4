@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-use Iluminate\Support\Str;
+use Illuminate\Support\Str;
 
 class CategoryFactory extends Factory
 {
@@ -15,10 +15,10 @@ class CategoryFactory extends Factory
      */
     public function definition()
     {
-        $name = $this->faker->unique()->word(2);
+        $name = $this->faker->unique()->word(20);
         return [
             'name' => $name,
-            // 'slug' => Str::slug($name),
+            'slug' => Str::slug($name)
         ];
     }
 }
