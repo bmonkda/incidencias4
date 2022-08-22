@@ -14,7 +14,7 @@ class HomeController extends Controller
         $incidencias = Incidencia::with('estatu')->get();
         $estatus = Estatu::all();
         // return view('admin.index');
-        return $incidencias;
+        // return $incidencias;
         return view('admin.index', compact('incidencias', 'estatus'));
     }
 }
