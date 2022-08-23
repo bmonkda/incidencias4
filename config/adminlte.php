@@ -343,8 +343,7 @@ return [
         ['header' => 'OPCIONES'],
         [
             'text' => 'Lista de incidencias',
-            // 'route' => 'admin.incidencias.index',
-            'url' => '#',
+            'route' => 'admin.incidencias.index',
             'icon' => 'fas fa-fw fa-clipboard',
             // 'can'  => 'admin.incidencias.index',
         ],
@@ -357,8 +356,7 @@ return [
         ],
         [
             'text' => 'Crear incidencias',
-            // 'route' => 'admin.incidencias.create',
-            'url' => '#',
+            'route' => 'admin.incidencias.create',
             'icon' => 'fas fa-fw fa-file',
             // 'can'  => 'admin.incidencias.create',
         ],
